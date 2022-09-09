@@ -39,7 +39,7 @@ body {
 
     margin: 3vmin;
     padding: 3vmin;
-    border-radius: .55%;
+    border-radius: 1vh;
 
     color: white;
     position: relative;
@@ -88,7 +88,12 @@ body {
     color: rgb(0, 190, 190);
 }
 
+.pastwork_image_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .pastwork_image_wrapper > .pastwork_image_elem {
-    width: 100vmin;
+    width: 100%;
     border-radius: .5vh;
 }
