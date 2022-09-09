@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+    overflow: hidden;
+    overflow-y: scroll;
+    background: rgb(20, 20, 20);
+
+    --main-background-color: #2b3030;
+    --main-border-color: #28acac;
+}
+
+::-webkit-scrollbar {
+    width: .5vmin;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(71, 71, 71);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-border-color);
+}
+
+.global_centeritems {
+    display: flex;
+    justify-content: center;
+}
+
+#main_inner_centeredarea {
+    width: 100vmin;
+
+    margin: 3vmin;
+    padding: 3vmin;
+    border-radius: .55%;
+
+    color: white;
+    position: relative;
+    font-family: 'Comfortaa';
+
+    background: #2b303083;
+    border: 1px solid var(--main-border-color);
+}
+
+#main_zoomedimage_wrapper {
+    top: 300px;
+    position: absolute;
+
+    z-index: 999999999;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+}
+
+#main_zoomedimage_description {
+    color: white;
+    font-size: 18px;
+
+    text-align: center;
+    position: absolute;
+
+    margin-top: 8vmin;
+}
+
+#main_zoomedimage_wrapper > #main_zoomedimage {
+    width: 100vmin;
+
+    pointer-events: none;
+    margin-bottom: 3.5vmin;
+}
+
+.about_page_wrapper {
+    margin-top: 1.85vmin;
+    overflow: hidden;
+}
+
+#page_bio_years {
+    color: darkgrey;
+}
+
+.hyperlink {
+    color: rgb(0, 190, 190);
+}
+
+.pastwork_image_wrapper > .pastwork_image_elem {
+    width: 100vmin;
+    border-radius: .5vh;
+}

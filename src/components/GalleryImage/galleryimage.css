@@ -1,0 +1,21 @@
+#gallery_images {
+    position: relative;
+    display: flex;
+}
+
+.gallery_image_wrapper {
+    width: 30%;
+    height: 30%;
+
+    margin: 1.5vmin;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.gallery_image_wrapper:hover {
+    transform: scale(1.05);
+}
+
+.gallery_image_wrapper > .gallery_img {
+    width: 100%;
+}
