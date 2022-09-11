@@ -2,6 +2,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
 
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
@@ -29,6 +30,7 @@ const Navbar: React.FC = () => {
                     <a className="navbar_button navbar_icon" href="https://www.instagram.com/alex.arizola/"><InstagramIcon></InstagramIcon></a>
                     <a className="navbar_button navbar_icon" href="https://twitter.com/GhostDaGhost/"><TwitterIcon></TwitterIcon></a>
                     <a className="navbar_button navbar_icon" href="https://www.linkedin.com/in/alexander-arizola-59a644242/"><LinkedInIcon></LinkedInIcon></a>
+                    <a className="navbar_button navbar_icon" href="mailto:ghostdaghostt@gmail.com"><EmailIcon></EmailIcon></a>
                 {/* </div> */}
             </nav>
 
