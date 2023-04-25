@@ -28,7 +28,7 @@ const Showcase: React.FC = () => {
 
                             const zoomedImageDescription: any = document.getElementById('main_zoomedimage_description');
                             const mainBackgroundContainer: any = document.getElementById('main_inner_centeredarea');
-                            const scrollPosition: any = window['pageYOffset'];
+                            const scrollPosition: number = window['pageYOffset'];
 
                             zoomedImageContainer['style']['opacity'] = 0;
                             setTimeout(() => {
