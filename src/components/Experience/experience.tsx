@@ -20,7 +20,7 @@ const Experience: React.FC<ExperienceInterface> = ({name, time, linkURL, avatarL
             <Divider />
             <ListItem>
                 <ListItemAvatar>
-                    <Avatar sx={{/*['bgcolor']: '#1e2222',*/ ['borderRadius']: '0%'}} src={avatarLinkURL}>
+                    <Avatar sx={{ borderRadius: '0%' }} src={avatarLinkURL}>
                         {!avatarLinkURL ? <KeyboardDoubleArrowRightIcon></KeyboardDoubleArrowRightIcon> : ''}
                     </Avatar>
                 </ListItemAvatar>

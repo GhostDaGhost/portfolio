@@ -1,11 +1,10 @@
 import Navbar from '../components/Navbar/navbar';
-import GalleryImage from '../components/GalleryImage/galleryimage';
 import Experience from '../components/Experience/experience';
 import Footer from '../components/Footer/footer';
 
 import Divider from '@mui/material/Divider';
 import List from '@mui/material/List';
-import { Button, ListSubheader, Typography } from '@mui/material';
+import { ListSubheader, Typography } from '@mui/material';
 
 import React from 'react';
 import '../main.css';
@@ -17,73 +16,45 @@ const About: React.FC = () => {
             <Navbar></Navbar>
 
             <div className='global_centeritems'>
-                <div id='main_zoomedimage_wrapper'>
-                    <img id='main_zoomedimage' src='' alt='zoomed in image' draggable='false'/>
-
-                    <div id='main_zoomedimage_description_wrapper'>
-                        <Typography id='main_zoomedimage_description' variant="body2" component="div"></Typography>
-                    </div>
-
-                    <div className='global_centeritems'>
-                        <Button id='main_zoomedimage_closebutton' variant="contained" onClick={() => {
-                            const zoomedImageContainer: any = document.getElementById('main_zoomedimage_wrapper');
-                            const zoomedImageElem: any = document.getElementById('main_zoomedimage');
-
-                            const zoomedImageDescription: any = document.getElementById('main_zoomedimage_description');
-                            const mainBackgroundContainer: any = document.getElementById('main_inner_centeredarea');
-                            const scrollPosition: number = window['pageYOffset'];
-
-                            zoomedImageContainer['style']['opacity'] = 0;
-                            setTimeout(() => {
-                                zoomedImageElem['src'] = '';
-                                zoomedImageDescription['innerHTML'] = ''
-
-                                mainBackgroundContainer['style']['opacity'] = 1;
-                                window.scrollTo(0, scrollPosition);
-                            }, 500);
-                        }}>Close</Button>
-                    </div>
-                </div>
-
                 <div id='main_inner_centeredarea'>
-                    <Typography sx={{ ['mt']: 1, ['mb']: 2 }} variant="h4" component="div">
+                    <Typography sx={{ mt: 1, mb: 2 }} variant="h4" component="div">
                         Alexander (Alex) Arizola
                     </Typography>
 
                     <Divider color='white'/>
 
                     <div className='about_page_wrapper'>
-                        <Typography sx={{ ['mt']: 1, ['mb']: 1 }} variant="body1" component="div">
+                        <Typography sx={{ mt: 1, mb: 1 }} variant="body1" component="div">
                             I'm Alex! A guy just living in a world where technology constantly evolves. I am a full stack developer with experience in various programming languages.
                             I've been in this line of work for <b>3 years</b> <span id="page_bio_years">(2019)</span>.
                             I currently own and actively develop on <a className='hyperlink' href='https://www.productionrp.net/'>ProductionRP</a>, a serious roleplay server on <a className='hyperlink' href="https://fivem.net">FiveM</a>.
                         </Typography>
 
-                        <Typography sx={{ ['mt']: 2, ['mb']: 1 }} variant="body1" component="div">
+                        <Typography sx={{ mt: 2, mb: 1 }} variant="body1" component="div">
                             I hold experience with issue tracking and task management. I've implemented task tracking processes using tools like trello and github issue tracking.
                             Keeping track of issues and ensuring that the correct department or developer is assigned to the relevant issues.
                         </Typography>
 
-                        <Typography sx={{ ['mt']: 2, ['mb']: 1 }} variant="body1" component="div">
+                        <Typography sx={{ mt: 2, mb: 1 }} variant="body1" component="div">
                             As a developer, I have experience in several languages and tools. For database systems, I utilize the 3NF approach, indexes, capable of optimizing queries using DBA tools, and able to maintain database security through the use of permissions and access control (like IP whitelisting).
                         </Typography>
 
-                        <Typography sx={{ ['mt']: 2, ['mb']: 1 }} variant="body1" component="div">
+                        <Typography sx={{ mt: 2, mb: 1 }} variant="body1" component="div">
                             As I used PHP, I familiarized myself with object oriented programming, laravel framework, writing and using APIs and using the blade templating engine (laravel front end bits).
                         </Typography>
 
-                        <Typography sx={{ ['mt']: 2, ['mb']: 1 }} variant="body1" component="div">
+                        <Typography sx={{ mt: 2, mb: 1 }} variant="body1" component="div">
                             I speak, write and understand English expertly as my first language as well as being capable of understanding and speaking Spanish.
                         </Typography>
 
-                        <Typography sx={{ ['textDecoration']: 'underline', ['mt']: 2, ['mb']: 1 }} variant="body1" component="div">
+                        <Typography sx={{ textDecoration: 'underline', mt: 2, mb: 1 }} variant="body1" component="div">
                             <b>Authorized to work in the United States for any employer.</b>
                         </Typography>
                     </div>
 
                     <div className='about_page_wrapper'>
-                        <List sx={{['width']: '100%', ['bgcolor']: '#272c2c'}} subheader={
-                            <ListSubheader component="div" sx={{['fontSize']: '16.55px', ['color']: 'white', ['bgcolor']: '#272c2c'}}>
+                        <List sx={{width: '100%', bgcolor: '#272c2c'}} subheader={
+                            <ListSubheader component="div" sx={{fontSize: '16.55px', color: 'white', bgcolor: '#272c2c'}}>
                                 Language experiences
                             </ListSubheader>
                         }>
@@ -101,8 +72,8 @@ const About: React.FC = () => {
                     </div>
 
                     <div className='about_page_wrapper'>
-                        <List sx={{['width']: '100%', ['bgcolor']: '#272c2c'}} subheader={
-                            <ListSubheader component="div" sx={{['fontSize']: '16.55px', ['color']: 'white', ['bgcolor']: '#272c2c'}}>
+                        <List sx={{width: '100%', bgcolor: '#272c2c'}} subheader={
+                            <ListSubheader component="div" sx={{fontSize: '16.55px', color: 'white', bgcolor: '#272c2c'}}>
                                 Tool experiences
                             </ListSubheader>
                         }>
@@ -115,19 +86,6 @@ const About: React.FC = () => {
                             <Experience name='zModeler 3' time='1 year' linkURL='https://www.zmodeler3.com/' avatarLinkURL='https://i.imgur.com/lqySBYp.png'></Experience>
                             <Experience name='Atom' time='Under a year' linkURL='https://atom.io/' avatarLinkURL='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/atom/atom-original.svg'></Experience>
                         </List>
-                    </div>
-
-                    <div className='about_page_wrapper'>
-                        <Typography sx={{ ['mt']: 1, ['mb']: 2 }} variant="h5" component="div">Work Gallery</Typography>
-                        <Divider sx={{ ['mt']: 1, ['mb']: 2 }} color='white'/>
-
-                        <div id='gallery_images'>
-                            <GalleryImage hint='Health Triaging Menu' path='https://i.imgur.com/BT0Cu9n.png'></GalleryImage>
-                            <GalleryImage hint='Mobile Phone' path='https://i.imgur.com/MNhLszk.png'></GalleryImage>
-                            <GalleryImage hint='Mobile Phone - Social Media' path='https://i.imgur.com/Ez71UaX.png'></GalleryImage>
-                            <GalleryImage hint='Police Mobile Data Terminal' path='https://i.imgur.com/ut9wv44.png'></GalleryImage>
-                            <GalleryImage hint='Crafting Menu' path='https://i.imgur.com/AJTPdFH.png'></GalleryImage>
-                        </div>
                     </div>
 
                     <Footer></Footer>
