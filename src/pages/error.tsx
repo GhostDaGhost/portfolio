@@ -1,6 +1,5 @@
 import Navbar from '../components/Navbar/navbar';
-
-import { Button, Typography } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 
 import React from 'react';
 import '../main.css';
@@ -13,13 +12,13 @@ const Error: React.FC = () => {
 
             <Typography sx={{ mt: 3, mb: 5, color: 'white', textAlign: 'center' }} variant="h1" component="div">404</Typography>
 
-            <Typography sx={{ mb: 7, color: 'white', textAlign: 'center' }} variant="h4" component="div">
+            <Typography sx={{ mb: 6, color: 'white', textAlign: 'center' }} variant="h5" component="div">
                 This page doesn't exist! Try one of the navigation bar buttons?
             </Typography>
 
-            <div className='global_centeritems'>
+            <Box display="flex" justifyContent="center" alignItems="center">
                 <Button href="/about" variant="contained">Return Home</Button>
-            </div>
+            </Box>
         </div>
     );
 }
