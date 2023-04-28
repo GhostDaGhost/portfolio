@@ -3,10 +3,17 @@ import Footer from '../components/Footer/footer';
 
 import GalleryImage from '../components/GalleryImage/galleryimage';
 import { galleryImages } from '../components/GalleryImage/data/consts';
-import { Typography, Divider, Modal, Box, LinearProgress } from '@mui/material';
+import { Typography, Divider, Modal, Box, LinearProgress, ImageList } from '@mui/material';
 
 import React, { useState } from 'react';
 import '../main.css';
+
+const showcaseImageListStyle: object = {
+    width: '90vmin',
+    height: '65vmin',
+    borderRadius: '.85vh',
+    bgcolor: 'rgba(0, 0, 0, .25)'
+};
 
 const showcaseModalStyle: object = {
     position: 'absolute' as 'absolute',
@@ -58,22 +65,24 @@ const Showcase: React.FC = () => {
 
                     <div className='about_page_wrapper'>
                         <Typography sx={{ mb: 2 }} variant="h5" component="div">Triage System</Typography>
-                        <Divider sx={{ opacity: .33, mb: 3 }} color='white' />
+                        <Divider sx={{ opacity: .33, mb: 1 }} color='white' />
 
-                        <Box sx={{ border: '1px solid rgb(95, 95, 95)' }} display="flex">
-                            {galleryImages['Triage System'].map((imageData: GalleryImage) => (
-                                <GalleryImage
-                                    hint={imageData['name']}
-                                    path={imageData['link']}
-                                    onImageClick={() => {
-                                        setFocusedImage(imageData['link']);
-                                        setOpen(true);
-                                    }}
-                                ></GalleryImage>
-                            ))}
+                        <Box display="flex" justifyContent="center">
+                            <ImageList sx={showcaseImageListStyle} cols={3}>
+                                {galleryImages['Triage System'].map((imageData: GalleryImage) => (
+                                    <GalleryImage
+                                        hint={imageData['name']}
+                                        path={imageData['link']}
+                                        onImageClick={() => {
+                                            setFocusedImage(imageData['link']);
+                                            setOpen(true);
+                                        }}
+                                    ></GalleryImage>
+                                ))}
+                            </ImageList>
                         </Box>
 
-                        <Typography sx={{ mt: 2 }} variant="body1" component="div">
+                        <Typography sx={{ mt: 1 }} variant="body1" component="div">
                             The triage system is a way for players to check the injuries of themselves or others.
                             The menu displays a skeleton in the middle of the window and the top row contains usable medications.
                             The row to the left of the skeleton is where injured bones, in the form of columns, would appear.
@@ -92,22 +101,24 @@ const Showcase: React.FC = () => {
 
                     <div className='about_page_wrapper'>
                         <Typography sx={{ mt: 1, mb: 2 }} variant="h5" component="div">Mobile Phone</Typography>
-                        <Divider sx={{ opacity: .33, mb: 3 }} color='white' />
+                        <Divider sx={{ opacity: .33, mb: 1 }} color='white' />
 
-                        <Box sx={{ border: '1px solid rgb(95, 95, 95)' }} display="flex">
-                            {galleryImages['Mobile Phone'].map((imageData: GalleryImage) => (
-                                <GalleryImage
-                                    hint={imageData['name']}
-                                    path={imageData['link']}
-                                    onImageClick={() => {
-                                        setFocusedImage(imageData['link']);
-                                        setOpen(true);
-                                    }}
-                                ></GalleryImage>
-                            ))}
+                        <Box display="flex" justifyContent="center">
+                            <ImageList sx={showcaseImageListStyle} cols={3}>
+                                {galleryImages['Mobile Phone'].map((imageData: GalleryImage) => (
+                                    <GalleryImage
+                                        hint={imageData['name']}
+                                        path={imageData['link']}
+                                        onImageClick={() => {
+                                            setFocusedImage(imageData['link']);
+                                            setOpen(true);
+                                        }}
+                                    ></GalleryImage>
+                                ))}
+                            </ImageList>
                         </Box>
 
-                        <Typography sx={{ mt: 2 }} variant="body1" component="div">
+                        <Typography sx={{ mt: 1 }} variant="body1" component="div">
                             The mobile phone was a project created in <a className='hyperlink' href='https://www.typescriptlang.org/'>TypeScript</a> and <a className='hyperlink' href='https://jquery.com/'>jQuery</a> for <span style={{color: 'rgb(0, 184, 153)'}}>ProductionRP</span>, a roleplay server for the multiplayer mod <a className='hyperlink' href='https://fivem.net/'>FiveM</a>.
                             The purpose of this phone is to simulate the functionalities of a real phone with the ability to call, text or email other players,
                             manage contacts and interact with the world on social media!
@@ -134,22 +145,24 @@ const Showcase: React.FC = () => {
 
                     <div className='about_page_wrapper'>
                         <Typography sx={{ mt: 1, mb: 2 }} variant="h5" component="div">Mobile Data Terminal</Typography>
-                        <Divider sx={{ opacity: .33, mb: 3 }} color='white' />
+                        <Divider sx={{ opacity: .33, mb: 1 }} color='white' />
 
-                        <Box sx={{ border: '1px solid rgb(95, 95, 95)' }} display="flex">
-                            {galleryImages['Mobile Data Terminal'].map((imageData: GalleryImage) => (
-                                <GalleryImage
-                                    hint={imageData['name']}
-                                    path={imageData['link']}
-                                    onImageClick={() => {
-                                        setFocusedImage(imageData['link']);
-                                        setOpen(true);
-                                    }}
-                                ></GalleryImage>
-                            ))}
+                        <Box display="flex" justifyContent="center">
+                            <ImageList sx={showcaseImageListStyle} cols={3}>
+                                {galleryImages['Mobile Data Terminal'].map((imageData: GalleryImage) => (
+                                    <GalleryImage
+                                        hint={imageData['name']}
+                                        path={imageData['link']}
+                                        onImageClick={() => {
+                                            setFocusedImage(imageData['link']);
+                                            setOpen(true);
+                                        }}
+                                    ></GalleryImage>
+                                ))}
+                            </ImageList>
                         </Box>
 
-                        <Typography sx={{ mt: 2 }} variant="body1" component="div">
+                        <Typography sx={{ mt: 1 }} variant="body1" component="div">
                             The Mobile Data Terminal (MDT) was a project created in <a className='hyperlink' href='https://www.typescriptlang.org/'>TypeScript</a> and <a className='hyperlink' href='https://jquery.com/'>jQuery</a> for <span style={{color: 'rgb(0, 184, 153)'}}>ProductionRP</span>, a roleplay server for the multiplayer mod <a className='hyperlink' href='https://fivem.net/'>FiveM</a>.
                             The purpose of this interface is to simulate the functionalities of a real MDT to work hand in hand with emergency services.
                         </Typography>
