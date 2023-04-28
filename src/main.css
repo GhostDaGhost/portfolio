@@ -29,11 +29,6 @@ body {
     background: var(--main-border-color);
 }
 
-.global_centeritems {
-    display: flex;
-    justify-content: center;
-}
-
 #main_inner_centeredarea {
     width: 100vmin;
 

@@ -9,7 +9,13 @@ const GalleryImage: React.FC<GalleryImageElement> = ({hint, path, onImageClick}:
     return (
         <Tooltip title={hint ?? 'Image Hint'} placement='top' arrow>
             <div className='gallery_image_wrapper' onClick={onImageClick}>
-                <img style={{ width: '100%' }} src={path ?? ''} alt='gallery item showcase' draggable='false'/>
+                <img
+                    style={{ width: '100%' }}
+                    src={path ?? ''}
+                    alt='gallery item showcase'
+                    loading='lazy'
+                    draggable='false'
+                />
             </div>
         </Tooltip>
     );

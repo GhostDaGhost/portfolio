@@ -6,11 +6,18 @@ import EmailIcon from '@mui/icons-material/Email';
 
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
+import Fade from '@mui/material/Fade/Fade';
+import Box from '@mui/material/Box/Box';
 
 import React from 'react';
 
 import '../../main.css';
 import './navbar.css';
+
+const navbarButtonStyle: object = {
+    borderColor: '#28acac',
+    color: 'white'
+}
 
 // NAVBAR COMPONENT
 const Navbar: React.FC = () => {
@@ -24,13 +31,15 @@ const Navbar: React.FC = () => {
                 <a className="navbar_button navbar_icon" href="mailto:ghostdaghostt@gmail.com"><EmailIcon></EmailIcon></a>
             </nav>
 
-            <div className='global_centeritems'>
-                <ButtonGroup sx={{ mt: 3, mb: 1 }} variant="outlined" aria-label="outlined button group">
-                    <Button href="/about" style={{borderColor: "#28acac", color: 'white'}}>About</Button>
-                    <Button href="/pastwork" style={{borderColor: "#28acac", color: 'white'}}>Past Work</Button>
-                    <Button href="/showcase" style={{borderColor: "#28acac", color: 'white'}}>Showcase</Button>
-                </ButtonGroup>
-            </div>
+            <Fade in={true} timeout={500}>
+                <Box display="flex" justifyContent="center">
+                    <ButtonGroup sx={{ mt: 3, mb: 1 }} variant="outlined" aria-label="outlined button group">
+                        <Button href="/about" style={navbarButtonStyle}>About</Button>
+                        <Button href="/pastwork" style={navbarButtonStyle}>Past Work</Button>
+                        <Button href="/showcase" style={navbarButtonStyle}>Showcase</Button>
+                    </ButtonGroup>
+                </Box>
+            </Fade>
         </div>
     );
 }
