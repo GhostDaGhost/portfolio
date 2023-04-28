@@ -5,11 +5,11 @@ import '../../main.css';
 import './galleryimage.css';
 
 // GALLERY IMAGE COMPONENT
-const GalleryImage: React.FC<GalleryImageInterface> = ({hint, path, onImageClick}: any = {}) => {
+const GalleryImage: React.FC<GalleryImageElement> = ({hint, path, onImageClick}: any = {}) => {
     return (
         <Tooltip title={hint ?? 'Image Hint'} placement='top' arrow>
             <div className='gallery_image_wrapper' onClick={onImageClick}>
-                <img className='gallery_img' src={path ?? ''} alt='gallery item showcase' draggable='false'/>
+                <img style={{ width: '100%' }} src={path ?? ''} alt='gallery item showcase' draggable='false'/>
             </div>
         </Tooltip>
     );

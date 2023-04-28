@@ -2,7 +2,8 @@ import Navbar from '../components/Navbar/navbar';
 import Footer from '../components/Footer/footer';
 
 import GalleryImage from '../components/GalleryImage/galleryimage';
-import { Typography, Divider, Modal, Box } from '@mui/material';
+import { galleryImages } from '../components/GalleryImage/data/consts';
+import { Typography, Divider, Modal, Box, LinearProgress } from '@mui/material';
 
 import React, { useState } from 'react';
 import '../main.css';
@@ -45,28 +46,32 @@ const Showcase: React.FC = () => {
             <div className='global_centeritems'>
                 <div id='main_inner_centeredarea'>
                     <div className='about_page_wrapper'>
-                        <Typography sx={{ mt: 1, mb: 2 }} variant="h5" component="div">Personal Website</Typography>
-                        <Divider sx={{ mb: 3 }} color='white' />
+                        <Typography sx={{ mt: 1, mb: 2 }} variant="h5" component="div">Portfolio</Typography>
+                        <Divider sx={{ opacity: .33, mb: 3 }} color='white' />
+
+                        <LinearProgress sx={{ mb: 3 }} color="inherit" />
 
                         <Typography sx={{ mt: 1, mb: 1 }} variant="body1" component="div">
-                            This website was written in React by myself and hosted through Netlify!
+                            This website was written in <a className='hyperlink' href='https://reactjs.org/'>TypeScript React</a> and <a className='hyperlink' href='https://mui.com/'>Material UI</a> by myself and hosted through <a className='hyperlink' href='https://netlify.com/'>Netlify</a>!
                         </Typography>
                     </div>
 
                     <div className='about_page_wrapper'>
                         <Typography sx={{ mb: 2 }} variant="h5" component="div">Health Triaging Menu</Typography>
-                        <Divider sx={{ mb: 3 }} color='white' />
+                        <Divider sx={{ opacity: .33, mb: 3 }} color='white' />
 
-                        <div id='gallery_images'>
-                            <GalleryImage
-                                hint='Health Triaging Menu'
-                                path='https://i.imgur.com/BT0Cu9n.png'
-                                onImageClick={() => {
-                                    setFocusedImage('https://i.imgur.com/BT0Cu9n.png');
-                                    setOpen(true);
-                                }}
-                            ></GalleryImage>
-                        </div>
+                        <Box sx={{ border: '1px solid rgb(95, 95, 95)' }} display="flex">
+                            {galleryImages['Health Triaging Menu'].map((imageData: GalleryImage) => (
+                                <GalleryImage
+                                    hint={imageData['name']}
+                                    path={imageData['link']}
+                                    onImageClick={() => {
+                                        setFocusedImage(imageData['link']);
+                                        setOpen(true);
+                                    }}
+                                ></GalleryImage>
+                            ))}
+                        </Box>
 
                         <Typography sx={{ mt: 1, mb: 1 }} variant="body1" component="div">
                             This menu served as a way to check injuries of yourself or other players. The left row would hold injured body parts and sort them into columns.
@@ -81,140 +86,78 @@ const Showcase: React.FC = () => {
 
                     <div className='about_page_wrapper'>
                         <Typography sx={{ mt: 1, mb: 2 }} variant="h5" component="div">Mobile Phone</Typography>
-                        <Divider sx={{ mb: 3 }} color='white' />
+                        <Divider sx={{ opacity: .33, mb: 3 }} color='white' />
 
-                        <div id='gallery_images'>
-                            <GalleryImage
-                                hint='Mobile Phone'
-                                path='https://i.imgur.com/MNhLszk.png'
-                                onImageClick={() => {
-                                    setFocusedImage('https://i.imgur.com/MNhLszk.png');
-                                    setOpen(true);
-                                }}
-                            ></GalleryImage>
+                        <Box sx={{ border: '1px solid rgb(95, 95, 95)' }} display="flex">
+                            {galleryImages['Mobile Phone'].map((imageData: GalleryImage) => (
+                                <GalleryImage
+                                    hint={imageData['name']}
+                                    path={imageData['link']}
+                                    onImageClick={() => {
+                                        setFocusedImage(imageData['link']);
+                                        setOpen(true);
+                                    }}
+                                ></GalleryImage>
+                            ))}
+                        </Box>
 
-                            <GalleryImage
-                                hint='Social Media'
-                                path='https://i.imgur.com/Ez71UaX.png'
-                                onImageClick={() => {
-                                    setFocusedImage('https://i.imgur.com/Ez71UaX.png');
-                                    setOpen(true);
-                                }}
-                            ></GalleryImage>
+                        <Typography sx={{ mt: 2 }} variant="body1" component="div">
+                            The mobile phone was a project created in TypeScript and jQuery for ProductionRP, a roleplay server for the multiplayer mod FiveM.
+                            The purpose of this phone is to simulate the functionalities of a real phone with the ability to call, text or email other players,
+                            manage contacts and interact with the world on social media!
+                        </Typography>
 
-                            <GalleryImage
-                                hint='Contacts'
-                                path='https://i.imgur.com/UEUxTeS.png'
-                                onImageClick={() => {
-                                    setFocusedImage('https://i.imgur.com/UEUxTeS.png');
-                                    setOpen(true);
-                                }}
-                            ></GalleryImage>
+                        <Typography sx={{ mt: 2 }} variant="body1" component="div">
+                            The phone also included the ability to take pictures and save them as well as personalizing the phone to the user's preference.
+                            This included the color of the frame, wallpaper, ringtone, text tone and email tone!
+                        </Typography>
 
-                            <GalleryImage
-                                hint='Messages'
-                                path='https://i.imgur.com/imw4ItA.png'
-                                onImageClick={() => {
-                                    setFocusedImage('https://i.imgur.com/imw4ItA.png');
-                                    setOpen(true);
-                                }}
-                            ></GalleryImage>
-                        </div>
+                        <Typography sx={{ mt: 2 }} variant="body1" component="div">
+                            The project was written in TypeScript and jQuery. With TypeScript having the capability of having a more structured and organized codebase
+                            as well as type checking and interfaces. jQuery was used to simplify the process of event handling and manipulation of the interface.
+                            The backend of the project involved usage of the language, Lua. FiveM utilized Lua a lot more commonly than other languages.
+                            With the assistance of FiveM's library, Lua code was written to manipulate the player model into performing animations while
+                            on the phone or texting. Lua was also used to process client to server events and callbacks.
+                        </Typography>
 
-                        <Typography sx={{ mt: 1, mb: 1 }} variant="body1" component="div">
-                            A device with a custom frame and no direct real-life brand resemblance. This device is used as the primary method of communication and interaction
-                            for the players. It includes a camera, messaging, social media, calling, banking and more! This image shows the home page of the phone.
-                            <br></br>
-                            <br></br>
-                            Using the same mobile phone system, a social media application was implemented that lets a user create/login to an account and begin "bleeting" which is the counterpart
-                            of "tweeting" in the lore. Users were able to rebleet (retweet), like and tag other accounts.
-                            <br></br>
-                            <br></br>
-                            The phone's front-end was designed with Typescript and CSS. The back-end was powered by Lua.
+                        <Typography sx={{ mt: 2 }} variant="body1" component="div">
+                            SQL queries were utilized to provide data from a database to the server which would then return the query results to the client.
+                            This was essentially the brain of the phone in order to retrieve call logs, text conversations, emails and other relevant data!
                         </Typography>
                     </div>
 
                     <div className='about_page_wrapper'>
                         <Typography sx={{ mt: 1, mb: 2 }} variant="h5" component="div">Mobile Data Terminal</Typography>
-                        <Divider sx={{ mb: 3 }} color='white' />
+                        <Divider sx={{ opacity: .33, mb: 3 }} color='white' />
 
-                        <div id='gallery_images'>
-                            <GalleryImage
-                                hint='Police Mobile Data Terminal'
-                                path='https://i.imgur.com/ut9wv44.png'
-                                onImageClick={() => {
-                                    setFocusedImage('https://i.imgur.com/ut9wv44.png');
-                                    setOpen(true);
-                                }}
-                            ></GalleryImage>
+                        <Box sx={{ border: '1px solid rgb(95, 95, 95)' }} display="flex">
+                            {galleryImages['Mobile Data Terminal'].map((imageData: GalleryImage) => (
+                                <GalleryImage
+                                    hint={imageData['name']}
+                                    path={imageData['link']}
+                                    onImageClick={() => {
+                                        setFocusedImage(imageData['link']);
+                                        setOpen(true);
+                                    }}
+                                ></GalleryImage>
+                            ))}
+                        </Box>
 
-                            <GalleryImage
-                                hint='Police - Dashboard'
-                                path='https://i.imgur.com/X1e0cYB.png'
-                                onImageClick={() => {
-                                    setFocusedImage('https://i.imgur.com/X1e0cYB.png');
-                                    setOpen(true);
-                                }}
-                            ></GalleryImage>
-
-                            <GalleryImage
-                                hint='Police - Vehicle Profile'
-                                path='https://i.imgur.com/YQYqJS3.png'
-                                onImageClick={() => {
-                                    setFocusedImage('https://i.imgur.com/YQYqJS3.png');
-                                    setOpen(true);
-                                }}
-                            ></GalleryImage>
-
-                            <GalleryImage
-                                hint='Police - Firearm Profile'
-                                path='https://i.imgur.com/RIqDtzo.png'
-                                onImageClick={() => {
-                                    setFocusedImage('https://i.imgur.com/RIqDtzo.png');
-                                    setOpen(true);
-                                }}
-                            ></GalleryImage>
-                        </div>
-
-                        <Typography sx={{ mt: 1, mb: 1 }} variant="body1" component="div">
-                            A device that is primarily used for record searching, data recording and report creating.
+                        <Typography sx={{ mt: 2 }} variant="body1" component="div">
+                            The Mobile Data Terminal (MDT) was a project created in TypeScript and jQuery for ProductionRP, a roleplay server for the multiplayer mod FiveM.
+                            The purpose of this interface is to simulate the functionalities of a real MDT to work hand in hand with emergency services.
                         </Typography>
 
-                        <Typography sx={{ mt: 3, mb: 1 }} variant="body1" component="div">
-                            The MDT's front-end was designed with Typescript and CSS. The back-end was powered by Lua.
-                        </Typography>
-                    </div>
-
-                    <div className='about_page_wrapper'>
-                        <Typography sx={{ mt: 1, mb: 2 }} variant="h5" component="div">Crafting Menu</Typography>
-                        <Divider sx={{ mb: 3 }} color='white' />
-
-                        <div id='gallery_images'>
-                            <GalleryImage
-                                hint='Crafting Menu'
-                                path='https://i.imgur.com/AJTPdFH.png'
-                                onImageClick={() => {
-                                    setFocusedImage('https://i.imgur.com/AJTPdFH.png');
-                                    setOpen(true);
-                                }}
-                            ></GalleryImage>
-
-                            <GalleryImage
-                                hint='Crafting Menu'
-                                path='https://i.imgur.com/aTf2aev.png'
-                                onImageClick={() => {
-                                    setFocusedImage('https://i.imgur.com/aTf2aev.png');
-                                    setOpen(true);
-                                }}
-                            ></GalleryImage>
-                        </div>
-
-                        <Typography sx={{ mt: 1, mb: 1 }} variant="body1" component="div">
-                            This menu serves a way for the player to craft items with ingredients in their inventory. They had the option to craft one or three or five at a time.
+                        <Typography sx={{ mt: 2 }} variant="body1" component="div">
+                            The project was written in TypeScript and jQuery. With TypeScript having the capability of having a more structured and organized codebase
+                            as well as type checking and interfaces. jQuery was used to simplify the process of event handling and manipulation of the interface.
+                            The backend of the project involved usage of the language, Lua. FiveM utilized Lua a lot more commonly than other languages.
+                            Lua was used to process client to server events and callbacks.
                         </Typography>
 
-                        <Typography sx={{ mt: 3, mb: 1 }} variant="body1" component="div">
-                            The menu's front-end was designed with Typescript and CSS. The back-end was powered by Lua.
+                        <Typography sx={{ mt: 2 }} variant="body1" component="div">
+                            SQL queries were utilized to provide data from a database to the server which would then return the query results to the client.
+                            This was essentially the brain of the MDT in order to retrieve reports, profiles and other relevant data!
                         </Typography>
                     </div>
 

@@ -1,8 +1,3 @@
-#gallery_images {
-    position: relative;
-    display: flex;
-}
-
 .gallery_image_wrapper {
     width: 30%;
     height: 30%;
@@ -14,8 +9,4 @@
 
 .gallery_image_wrapper:hover {
     transform: scale(1.05);
-}
-
-.gallery_image_wrapper > .gallery_img {
-    width: 100%;
 }
