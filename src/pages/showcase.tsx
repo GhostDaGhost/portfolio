@@ -121,8 +121,8 @@ const Showcase: React.FC = () => {
                         <Typography sx={{ mt: 2 }} variant="body1" component="div">
                             The project was written in <a className='hyperlink' href='https://www.typescriptlang.org/'>TypeScript</a> and <a className='hyperlink' href='https://jquery.com/'>jQuery</a>. With <a className='hyperlink' href='https://www.typescriptlang.org/'>TypeScript</a> having the capability of having a more structured and organized codebase
                             as well as type checking and interfaces. <a className='hyperlink' href='https://jquery.com/'>jQuery</a> was used to simplify the process of event handling and manipulation of the interface.
-                            The backend of the project involved usage of the language, <a className='hyperlink' href='https://lua.org/'>Lua</a>. FiveM utilized <a className='hyperlink' href='https://lua.org/'>Lua</a> a lot more commonly than other languages.
-                            With the assistance of FiveM's library, <a className='hyperlink' href='https://lua.org/'>Lua</a> code was written to manipulate the player model into performing animations while
+                            The backend of the project involved usage of the language, <a className='hyperlink' href='https://lua.org/'>Lua</a>. <a className='hyperlink' href='https://fivem.net/'>FiveM</a> utilized <a className='hyperlink' href='https://lua.org/'>Lua</a> a lot more commonly than other languages.
+                            With the assistance of <a className='hyperlink' href='https://docs.fivem.net/natives/'>FiveM's library</a>, <a className='hyperlink' href='https://lua.org/'>Lua</a> code was written to manipulate the player model into performing animations while
                             on the phone or texting. <a className='hyperlink' href='https://lua.org/'>Lua</a> was also used to process client to server events and callbacks.
                         </Typography>
 
@@ -158,14 +158,13 @@ const Showcase: React.FC = () => {
                             Law enforcement players have access to a vehicles, firearms, licenses and properties database. Whilst all emergency services players have access to a persons database.
                             Both sides also have a report writing system based on incidents they respond to in-game. The report system is designed to be near realism but also simple.
                             The data is all saved through SQL queries to a <a className='hyperlink' href='https://www.mysql.com/'>database</a>.
-                            Having an MDT whilst providing an emergency services experience on FiveM enhances the immersion and gameplay experience of those who utilize it.
+                            Having an MDT whilst providing an emergency services experience on <a className='hyperlink' href='https://fivem.net/'>FiveM</a> enhances the immersion and gameplay experience of those who utilize it.
                         </Typography>
 
                         <Typography sx={{ mt: 2 }} variant="body1" component="div">
                             The project was written in <a className='hyperlink' href='https://www.typescriptlang.org/'>TypeScript</a> and <a className='hyperlink' href='https://jquery.com/'>jQuery</a>. With <a className='hyperlink' href='https://www.typescriptlang.org/'>TypeScript</a> having the capability of having a more structured and organized codebase
                             as well as type checking and interfaces. <a className='hyperlink' href='https://jquery.com/'>jQuery</a> was used to simplify the process of event handling and manipulation of the interface.
-                            The backend of the project involved usage of the language, <a className='hyperlink' href='https://lua.org/'>Lua</a>. FiveM utilized <a className='hyperlink' href='https://lua.org/'>Lua</a> a lot more commonly than other languages.
-                            <a className='hyperlink' href='https://lua.org/'>Lua</a> was used to process client to server events and callbacks.
+                            The backend of the project involved usage of the language, <a className='hyperlink' href='https://lua.org/'>Lua</a>. <a className='hyperlink' href='https://fivem.net/'>FiveM</a> utilized <a className='hyperlink' href='https://lua.org/'>Lua</a> a lot more commonly than other languages. <a className='hyperlink' href='https://lua.org/'>Lua</a> was used to process client to server events and callbacks.
                         </Typography>
 
                         <Typography sx={{ mt: 2 }} variant="body1" component="div">
