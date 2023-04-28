@@ -10,7 +10,7 @@ import '../main.css';
 
 const showcaseImageListStyle: object = {
     width: '90vmin',
-    height: '65vmin',
+    maxHeight: '65vmin',
     borderRadius: '.85vh',
     bgcolor: 'rgba(0, 0, 0, .25)'
 };
