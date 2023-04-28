@@ -49,32 +49,6 @@ body {
     border: 1px solid var(--main-border-color);
 }
 
-#main_zoomedimage_wrapper {
-    top: 300px;
-    position: absolute;
-
-    z-index: 999999999;
-    opacity: 0;
-    transition: opacity .5s ease-in-out;
-}
-
-#main_zoomedimage_description {
-    color: white;
-    font-size: 18px;
-
-    text-align: center;
-    position: absolute;
-
-    margin-top: 8vmin;
-}
-
-#main_zoomedimage_wrapper > #main_zoomedimage {
-    width: 100vmin;
-
-    pointer-events: none;
-    margin-bottom: 3.5vmin;
-}
-
 .about_page_wrapper {
     margin-top: 1.85vmin;
     overflow: hidden;

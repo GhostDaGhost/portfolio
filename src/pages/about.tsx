@@ -33,16 +33,16 @@ const About: React.FC = () => {
                         </Typography>
 
                         <Typography sx={{ mt: 2, mb: 1 }} variant="body1" component="div">
-                            I hold experience with issue tracking and task management. I've implemented task tracking processes using tools like trello and github issue tracking.
+                            I hold experience with issue tracking and task management. I've implemented task tracking processes using tools like <a className='hyperlink' href='https://trello.com/'>Trello</a> and <a className='hyperlink' href='https://github.com/'>GitHub</a>/<a className='hyperlink' href='https://gitlab.com/'>GitLab</a> issue tracking.
                             Keeping track of issues and ensuring that the correct department or developer is assigned to the relevant issues.
                         </Typography>
 
                         <Typography sx={{ mt: 2, mb: 1 }} variant="body1" component="div">
-                            As a developer, I have experience in several languages and tools. For database systems, I utilize the 3NF approach, indexes, capable of optimizing queries using DBA tools, and able to maintain database security through the use of permissions and access control (like IP whitelisting).
+                            As a developer, I have experience in several languages and tools. For <a className='hyperlink' href='https://mysql.com/'>database systems</a>, I utilize the 3NF approach, indexes, capable of optimizing queries using DBA tools, and able to maintain database security through the use of permissions and access control (like IP whitelisting).
                         </Typography>
 
                         <Typography sx={{ mt: 2, mb: 1 }} variant="body1" component="div">
-                            As I used PHP, I familiarized myself with object oriented programming, laravel framework, writing and using APIs and using the blade templating engine (laravel front end bits).
+                            As I used <a className='hyperlink' href='https://php.net/'>PHP</a>, I familiarized myself with object oriented programming, <a className='hyperlink' href='https://laravel.com/'>Laravel framework</a>, writing and using APIs and using the <a className='hyperlink' href='https://laravel.com/docs/10.x/blade#introduction'>Blade templating engine</a> (Laravel front end bits).
                         </Typography>
 
                         <Typography sx={{ mt: 2, mb: 1 }} variant="body1" component="div">

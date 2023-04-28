@@ -57,11 +57,11 @@ const Showcase: React.FC = () => {
                     </div>
 
                     <div className='about_page_wrapper'>
-                        <Typography sx={{ mb: 2 }} variant="h5" component="div">Health Triaging Menu</Typography>
+                        <Typography sx={{ mb: 2 }} variant="h5" component="div">Triage System</Typography>
                         <Divider sx={{ opacity: .33, mb: 3 }} color='white' />
 
                         <Box sx={{ border: '1px solid rgb(95, 95, 95)' }} display="flex">
-                            {galleryImages['Health Triaging Menu'].map((imageData: GalleryImage) => (
+                            {galleryImages['Triage System'].map((imageData: GalleryImage) => (
                                 <GalleryImage
                                     hint={imageData['name']}
                                     path={imageData['link']}
@@ -73,14 +73,20 @@ const Showcase: React.FC = () => {
                             ))}
                         </Box>
 
-                        <Typography sx={{ mt: 1, mb: 1 }} variant="body1" component="div">
-                            This menu served as a way to check injuries of yourself or other players. The left row would hold injured body parts and sort them into columns.
-                            The right row would hold the injuries to the selected body part column and show on the skeleton where that body part is. The colored icons to the left
-                            of the skeleton were a way to provide medications/insert IVs to heal the player or treat any negative effects on them.
+                        <Typography sx={{ mt: 2 }} variant="body1" component="div">
+                            The triage system is a way for players to check the injuries of themselves or others.
+                            The menu displays a skeleton in the middle of the window and the top row contains usable medications.
+                            The row to the left of the skeleton is where injured bones, in the form of columns, would appear.
+                            Selecting an injured bone will give you columns on the row to the right of the skeleton detailing injuries and their severities.
                         </Typography>
 
-                        <Typography sx={{ mt: 3 }} variant="body1" component="div">
-                            The menu's front-end was designed with Typescript and CSS. The back-end was powered by Lua.
+                        <Typography sx={{ mt: 2 }} variant="body1" component="div">
+                            Once an injury is selected, the system checks if the player has the required treatment tools in their inventory and then proceeds with treatment if the checks pass.
+                            This goes for the medications as well with the inventory checks.
+                        </Typography>
+
+                        <Typography sx={{ mt: 2 }} variant="body1" component="div">
+                            This interface was created in <a className='hyperlink' href='https://www.typescriptlang.org/'>TypeScript</a> and <a className='hyperlink' href='https://jquery.com/'>jQuery</a> for <span style={{color: 'rgb(0, 184, 153)'}}>ProductionRP</span>, a roleplay server for the multiplayer mod <a className='hyperlink' href='https://fivem.net/'>FiveM</a>.
                         </Typography>
                     </div>
 
@@ -102,7 +108,7 @@ const Showcase: React.FC = () => {
                         </Box>
 
                         <Typography sx={{ mt: 2 }} variant="body1" component="div">
-                            The mobile phone was a project created in TypeScript and jQuery for ProductionRP, a roleplay server for the multiplayer mod FiveM.
+                            The mobile phone was a project created in <a className='hyperlink' href='https://www.typescriptlang.org/'>TypeScript</a> and <a className='hyperlink' href='https://jquery.com/'>jQuery</a> for <span style={{color: 'rgb(0, 184, 153)'}}>ProductionRP</span>, a roleplay server for the multiplayer mod <a className='hyperlink' href='https://fivem.net/'>FiveM</a>.
                             The purpose of this phone is to simulate the functionalities of a real phone with the ability to call, text or email other players,
                             manage contacts and interact with the world on social media!
                         </Typography>
@@ -113,15 +119,15 @@ const Showcase: React.FC = () => {
                         </Typography>
 
                         <Typography sx={{ mt: 2 }} variant="body1" component="div">
-                            The project was written in TypeScript and jQuery. With TypeScript having the capability of having a more structured and organized codebase
-                            as well as type checking and interfaces. jQuery was used to simplify the process of event handling and manipulation of the interface.
-                            The backend of the project involved usage of the language, Lua. FiveM utilized Lua a lot more commonly than other languages.
-                            With the assistance of FiveM's library, Lua code was written to manipulate the player model into performing animations while
-                            on the phone or texting. Lua was also used to process client to server events and callbacks.
+                            The project was written in <a className='hyperlink' href='https://www.typescriptlang.org/'>TypeScript</a> and <a className='hyperlink' href='https://jquery.com/'>jQuery</a>. With <a className='hyperlink' href='https://www.typescriptlang.org/'>TypeScript</a> having the capability of having a more structured and organized codebase
+                            as well as type checking and interfaces. <a className='hyperlink' href='https://jquery.com/'>jQuery</a> was used to simplify the process of event handling and manipulation of the interface.
+                            The backend of the project involved usage of the language, <a className='hyperlink' href='https://lua.org/'>Lua</a>. FiveM utilized <a className='hyperlink' href='https://lua.org/'>Lua</a> a lot more commonly than other languages.
+                            With the assistance of FiveM's library, <a className='hyperlink' href='https://lua.org/'>Lua</a> code was written to manipulate the player model into performing animations while
+                            on the phone or texting. <a className='hyperlink' href='https://lua.org/'>Lua</a> was also used to process client to server events and callbacks.
                         </Typography>
 
                         <Typography sx={{ mt: 2 }} variant="body1" component="div">
-                            SQL queries were utilized to provide data from a database to the server which would then return the query results to the client.
+                            SQL queries were utilized to provide data from a <a className='hyperlink' href='https://www.mysql.com/'>database</a> to the server which would then return the query results to the client.
                             This was essentially the brain of the phone in order to retrieve call logs, text conversations, emails and other relevant data!
                         </Typography>
                     </div>
@@ -144,19 +150,26 @@ const Showcase: React.FC = () => {
                         </Box>
 
                         <Typography sx={{ mt: 2 }} variant="body1" component="div">
-                            The Mobile Data Terminal (MDT) was a project created in TypeScript and jQuery for ProductionRP, a roleplay server for the multiplayer mod FiveM.
+                            The Mobile Data Terminal (MDT) was a project created in <a className='hyperlink' href='https://www.typescriptlang.org/'>TypeScript</a> and <a className='hyperlink' href='https://jquery.com/'>jQuery</a> for <span style={{color: 'rgb(0, 184, 153)'}}>ProductionRP</span>, a roleplay server for the multiplayer mod <a className='hyperlink' href='https://fivem.net/'>FiveM</a>.
                             The purpose of this interface is to simulate the functionalities of a real MDT to work hand in hand with emergency services.
                         </Typography>
 
                         <Typography sx={{ mt: 2 }} variant="body1" component="div">
-                            The project was written in TypeScript and jQuery. With TypeScript having the capability of having a more structured and organized codebase
-                            as well as type checking and interfaces. jQuery was used to simplify the process of event handling and manipulation of the interface.
-                            The backend of the project involved usage of the language, Lua. FiveM utilized Lua a lot more commonly than other languages.
-                            Lua was used to process client to server events and callbacks.
+                            Law enforcement players have access to a vehicles, firearms, licenses and properties database. Whilst all emergency services players have access to a persons database.
+                            Both sides also have a report writing system based on incidents they respond to in-game. The report system is designed to be near realism but also simple.
+                            The data is all saved through SQL queries to a <a className='hyperlink' href='https://www.mysql.com/'>database</a>.
+                            Having an MDT whilst providing an emergency services experience on FiveM enhances the immersion and gameplay experience of those who utilize it.
                         </Typography>
 
                         <Typography sx={{ mt: 2 }} variant="body1" component="div">
-                            SQL queries were utilized to provide data from a database to the server which would then return the query results to the client.
+                            The project was written in <a className='hyperlink' href='https://www.typescriptlang.org/'>TypeScript</a> and <a className='hyperlink' href='https://jquery.com/'>jQuery</a>. With <a className='hyperlink' href='https://www.typescriptlang.org/'>TypeScript</a> having the capability of having a more structured and organized codebase
+                            as well as type checking and interfaces. <a className='hyperlink' href='https://jquery.com/'>jQuery</a> was used to simplify the process of event handling and manipulation of the interface.
+                            The backend of the project involved usage of the language, <a className='hyperlink' href='https://lua.org/'>Lua</a>. FiveM utilized <a className='hyperlink' href='https://lua.org/'>Lua</a> a lot more commonly than other languages.
+                            <a className='hyperlink' href='https://lua.org/'>Lua</a> was used to process client to server events and callbacks.
+                        </Typography>
+
+                        <Typography sx={{ mt: 2 }} variant="body1" component="div">
+                            SQL queries were utilized to provide data from a <a className='hyperlink' href='https://www.mysql.com/'>database</a> to the server which would then return the query results to the client.
                             This was essentially the brain of the MDT in order to retrieve reports, profiles and other relevant data!
                         </Typography>
                     </div>

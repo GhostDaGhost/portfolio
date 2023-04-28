@@ -1,7 +1,7 @@
 export const galleryImages: any = {
-    'Health Triaging Menu': [
+    'Triage System': [
         {
-            'name': 'Health Triaging Menu',
+            'name': 'Triage Menu',
             'link': 'https://i.imgur.com/BT0Cu9n.png'
         }
     ],
