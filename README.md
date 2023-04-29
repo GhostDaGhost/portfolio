@@ -1,5 +1,5 @@
 <div align="center">
-    <img height="85" src="public/favicon.png" draggable="false">
+    <img height="85" src="public/favicon.png" alt="favicon" draggable="false">
 </div>
 
 <h4 align="center">
@@ -8,7 +8,11 @@
 
 <p align="center" style="margin-top: 25px">
   <a href="https://app.netlify.com/sites/fabulous-klepon-4df1dd/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/b0bbd217-5d7a-41c5-930c-cf08cc13fe22/deploy-status" alt="Netlify Status" />
+    <img
+      src="https://api.netlify.com/api/v1/badges/b0bbd217-5d7a-41c5-930c-cf08cc13fe22/deploy-status" 
+      alt="Netlify Status"
+      draggable="false"
+    />
   </a>
 </p>
 

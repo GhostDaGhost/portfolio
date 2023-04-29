@@ -56,13 +56,3 @@ body {
 .hyperlink {
     color: rgb(0, 190, 190);
 }
-
-.pastwork_image_wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-.pastwork_image_wrapper > .pastwork_image_elem {
-    width: 100%;
-    border-radius: .5vh;
-}

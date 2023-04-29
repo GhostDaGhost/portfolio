@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar/navbar';
 import Footer from '../components/Footer/footer';
+import PastWorkHeader from '../components/PastWorkHeader/pastworkheader';
 
 import { Divider, Fade, Typography } from '@mui/material';
 import Box from '@mui/system/Box/Box';
@@ -25,11 +26,7 @@ const PastWork: React.FC = () => {
                         <Divider sx={{ mb: 3 }} color='white'/>
 
                         <div className='about_page_wrapper'>
-                            <div className='pastwork_image_wrapper'>
-                                <img className='pastwork_image_elem' src='https://i.imgur.com/2pKT5rf.png' alt='prp banner' draggable='false' />
-                            </div>
-
-                            <Typography sx={{ mt: 3, color: 'darkgrey', textAlign: 'center' }} variant="body1" component="div">2021 - Present</Typography>
+                            <PastWorkHeader imageLink='https://i.imgur.com/2pKT5rf.png' time='2021 - Present'></PastWorkHeader>
 
                             <Typography sx={{ mt: 3, mb: 1 }} variant="body1" component="div">
                                 I started a big project of my own which was to create a serious roleplay server on the platform of <a className='hyperlink' href='https://fivem.net/'>FiveM</a>,
@@ -58,11 +55,7 @@ const PastWork: React.FC = () => {
                         <VisibilitySensor partialVisibility onChange={(isVisible: boolean = false) => setNDGVisibility(isVisible)}>
                             <Fade in={showNDG} timeout={950}>
                                 <div className='about_page_wrapper'>
-                                    <div className='pastwork_image_wrapper'>
-                                        <img className='pastwork_image_elem' src='https://i.imgur.com/wUqrlcZ.jpg' alt='ndg banner' draggable='false' />
-                                    </div>
-
-                                    <Typography sx={{ mt: 3, color: 'darkgrey', textAlign: 'center' }} variant="body1" component="div">2020 - 2020</Typography>
+                                    <PastWorkHeader imageLink='https://i.imgur.com/wUqrlcZ.jpg' time='2020 - 2020'></PastWorkHeader>
 
                                     <Typography sx={{ mt: 3, mb: 1 }} variant="body1" component="div">
                                         Took on the rule of a developer in the <span style={{color: 'orange'}}>New Dawn Gaming</span> community which was a serious roleplay server on the platform of <a className='hyperlink' href='https://fivem.net/'>FiveM</a>, a modification of <a className='hyperlink' href='https://www.rockstargames.com/gta-v'>Grand Theft Auto V</a>.
@@ -82,11 +75,7 @@ const PastWork: React.FC = () => {
                         <VisibilitySensor partialVisibility onChange={(isVisible: boolean = false) => setSOEVisibility(isVisible)}>
                             <Fade in={showSOE} timeout={950}>
                                 <div className='about_page_wrapper'>
-                                    <div className='pastwork_image_wrapper'>
-                                        <img className='pastwork_image_elem' src='https://i.imgur.com/Y5bvEf7.png' alt='soe banner' draggable='false' />
-                                    </div>
-
-                                    <Typography sx={{ mt: 3, color: 'darkgrey', textAlign: 'center' }} variant="body1" component="div">2019 - 2021</Typography>
+                                    <PastWorkHeader imageLink='https://i.imgur.com/Y5bvEf7.jpg' time='2019 - 2021'></PastWorkHeader>
 
                                     <Typography sx={{ mt: 3, mb: 1 }} variant="body1" component="div">
                                         I began my freelance development by assisting the <span style={{color: 'red'}}>State of Emergency</span> project which was a serious roleplay server
