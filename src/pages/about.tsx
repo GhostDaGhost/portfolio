@@ -67,7 +67,7 @@ const About: React.FC = () => {
                                 I speak, write and understand English expertly as my first language as well as being capable of understanding and speaking Spanish.
                             </Typography>
 
-                            <Typography sx={{ textDecoration: 'underline', mt: 2, mb: 1 }} variant="body1" component="div">
+                            <Typography sx={{ textAlign: 'center', textDecoration: 'underline', mt: 2, mb: 1 }} variant="body1" component="div">
                                 <b>Authorized to work in the United States for any employer.</b>
                             </Typography>
                         </div>
