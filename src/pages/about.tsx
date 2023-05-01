@@ -12,6 +12,7 @@ import Box from '@mui/system/Box/Box';
 
 import { Fade, ListSubheader, Typography } from '@mui/material';
 import { experiencedLanguages, experiencedTools } from '../components/Experience/data/consts';
+import ScrollToTop from '../components/ScrollToTop/scrolltotop';
 
 const experiencesListStyle: object = {
     width: '100%',
@@ -46,7 +47,7 @@ const About: React.FC = () => {
                         <div className='about_page_wrapper'>
                             <Typography sx={{ mt: 1, mb: 1 }} variant="body1" component="div">
                                 I'm Alex! A guy just living in a world where technology constantly evolves. I am a full stack developer with experience in various programming languages.
-                                I've been in this line of work for <b>3 years</b> <span id="page_bio_years">(2019)</span>.
+                                I've been in this line of work for <b>3 years</b> <span style={{ color: 'darkgrey' }}>(2019)</span>.
                                 I currently own and actively develop on <a className='hyperlink' href='https://www.productionrp.net/'>ProductionRP</a>, a serious roleplay server on <a className='hyperlink' href="https://fivem.net">FiveM</a>.
                             </Typography>
 
@@ -118,6 +119,8 @@ const About: React.FC = () => {
                     </div>
                 </Box>
             </Fade>
+
+            <ScrollToTop/>
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import Navbar from '../components/Navbar/navbar';
 import Footer from '../components/Footer/footer';
 import PastWorkHeader from '../components/PastWorkHeader/pastworkheader';
+import ScrollToTop from '../components/ScrollToTop/scrolltotop';
 
 import { Divider, Fade, Typography } from '@mui/material';
 import Box from '@mui/system/Box/Box';
@@ -103,6 +104,8 @@ const PastWork: React.FC = () => {
                     </div>
                 </Box>
             </Fade>
+
+            <ScrollToTop/>
         </div>
     );
 }

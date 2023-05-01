@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar/navbar';
 import Footer from '../components/Footer/footer';
+import ScrollToTop from '../components/ScrollToTop/scrolltotop';
 
 import GalleryImage from '../components/GalleryImage/galleryimage';
 import { galleryImages } from '../components/GalleryImage/data/consts';
@@ -204,6 +205,8 @@ const Showcase: React.FC = () => {
                     </div>
                 </Box>
             </Fade>
+
+            <ScrollToTop/>
         </div>
     );
 }
