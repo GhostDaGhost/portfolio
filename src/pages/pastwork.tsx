@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar/navbar';
 import Footer from '../components/Footer/footer';
 import PastWorkHeader from '../components/PastWorkHeader/pastworkheader';
 
-import { Divider, Fade, Typography } from '@mui/material';
+import { Divider, Fade, Slide, Typography } from '@mui/material';
 import Box from '@mui/system/Box/Box';
 
 import React, { useState } from 'react';
@@ -53,48 +53,56 @@ const PastWork: React.FC = () => {
                         <Divider sx={{ mt: 3, mb: 3 }} color='white' />
 
                         <VisibilitySensor partialVisibility onChange={(isVisible: boolean = false) => setNDGVisibility(isVisible)}>
-                            <Fade in={showNDG} timeout={950}>
-                                <div className='about_page_wrapper'>
-                                    <PastWorkHeader imageLink='https://i.imgur.com/wUqrlcZ.jpg' time='2020 - 2020'></PastWorkHeader>
+                            <Slide direction="right" in={showNDG} timeout={2000}>
+                                <div>
+                                    <Fade in={showNDG} timeout={2000}>
+                                        <div className='about_page_wrapper'>
+                                            <PastWorkHeader imageLink='https://i.imgur.com/wUqrlcZ.jpg' time='2020 - 2020'></PastWorkHeader>
 
-                                    <Typography sx={{ mt: 3, mb: 1 }} variant="body1" component="div">
-                                        Took on the rule of a developer in the <span style={{color: 'orange'}}>New Dawn Gaming</span> community which was a serious roleplay server on the platform of <a className='hyperlink' href='https://fivem.net/'>FiveM</a>, a modification of <a className='hyperlink' href='https://www.rockstargames.com/gta-v'>Grand Theft Auto V</a>.
-                                        I assisted in this project with bug fixes and code improvements for under a year before it shut down.
-                                    </Typography>
+                                            <Typography sx={{ mt: 3, mb: 1 }} variant="body1" component="div">
+                                                Took on the rule of a developer in the <span style={{color: 'orange'}}>New Dawn Gaming</span> community which was a serious roleplay server on the platform of <a className='hyperlink' href='https://fivem.net/'>FiveM</a>, a modification of <a className='hyperlink' href='https://www.rockstargames.com/gta-v'>Grand Theft Auto V</a>.
+                                                I assisted in this project with bug fixes and code improvements for under a year before it shut down.
+                                            </Typography>
 
-                                    <Typography sx={{ mt: 3 }} variant="body1" component="div">
-                                        <span style={{color: 'orange'}}>New Dawn Gaming</span> utilized <a className='hyperlink' href='https://gitlab.com/'>GitLab</a>, <a className='hyperlink' href='https://git-scm.com/'>Git</a> and ran on a Windows Server.
-                                        I've created merge requests, branches, commits, issues and managed users while on this project. The framework was ran off of <a className='hyperlink' href='https://lua.org/'>Lua</a> which I held experience in.
-                                    </Typography>
+                                            <Typography sx={{ mt: 3 }} variant="body1" component="div">
+                                                <span style={{color: 'orange'}}>New Dawn Gaming</span> utilized <a className='hyperlink' href='https://gitlab.com/'>GitLab</a>, <a className='hyperlink' href='https://git-scm.com/'>Git</a> and ran on a Windows Server.
+                                                I've created merge requests, branches, commits, issues and managed users while on this project. The framework was ran off of <a className='hyperlink' href='https://lua.org/'>Lua</a> which I held experience in.
+                                            </Typography>
+                                        </div>
+                                    </Fade>
                                 </div>
-                            </Fade>
+                            </Slide>
                         </VisibilitySensor>
 
                         <Divider sx={{ mt: 3, mb: 3 }} color='white' />
 
                         <VisibilitySensor partialVisibility onChange={(isVisible: boolean = false) => setSOEVisibility(isVisible)}>
-                            <Fade in={showSOE} timeout={950}>
-                                <div className='about_page_wrapper'>
-                                    <PastWorkHeader imageLink='https://i.imgur.com/Y5bvEf7.jpg' time='2019 - 2021'></PastWorkHeader>
+                            <Slide direction="left" in={showSOE} timeout={2000}>
+                                <div>
+                                    <Fade in={showSOE} timeout={2000}>
+                                        <div className='about_page_wrapper'>
+                                            <PastWorkHeader imageLink='https://i.imgur.com/Y5bvEf7.jpg' time='2019 - 2021'></PastWorkHeader>
 
-                                    <Typography sx={{ mt: 3, mb: 1 }} variant="body1" component="div">
-                                        I began my freelance development by assisting the <span style={{color: 'red'}}>State of Emergency</span> project which was a serious roleplay server
-                                        on the platform of <a className='hyperlink' href='https://fivem.net/'>FiveM</a>, a modification of <a className='hyperlink' href='https://www.rockstargames.com/gta-v'>Grand Theft Auto V</a>.
-                                        I assisted in this project for 2 years before it was defunct.
-                                    </Typography>
+                                            <Typography sx={{ mt: 3, mb: 1 }} variant="body1" component="div">
+                                                I began my freelance development by assisting the <span style={{color: 'red'}}>State of Emergency</span> project which was a serious roleplay server
+                                                on the platform of <a className='hyperlink' href='https://fivem.net/'>FiveM</a>, a modification of <a className='hyperlink' href='https://www.rockstargames.com/gta-v'>Grand Theft Auto V</a>.
+                                                I assisted in this project for 2 years before it was defunct.
+                                            </Typography>
 
-                                    <Typography sx={{ mt: 3, mb: 1 }} variant="body1" component="div">
-                                        Originally, <span style={{color: 'red'}}>State of Emergency</span> utilized <a className='hyperlink' href='https://gitlab.com/'>GitLab</a> and <a className='hyperlink' href='https://git-scm.com/'>Git</a> whilst running on Linux servers but then moved onto <a className='hyperlink' href='https://github.com/'>GitHub</a> for a more reliable repository system. On both systems,
-                                        I've created merge/pull requests, branches, commits, issues and managed users.
-                                    </Typography>
+                                            <Typography sx={{ mt: 3, mb: 1 }} variant="body1" component="div">
+                                                Originally, <span style={{color: 'red'}}>State of Emergency</span> utilized <a className='hyperlink' href='https://gitlab.com/'>GitLab</a> and <a className='hyperlink' href='https://git-scm.com/'>Git</a> whilst running on Linux servers but then moved onto <a className='hyperlink' href='https://github.com/'>GitHub</a> for a more reliable repository system. On both systems,
+                                                I've created merge/pull requests, branches, commits, issues and managed users.
+                                            </Typography>
 
-                                    <Typography sx={{ mt: 3 }} variant="body1" component="div">
-                                        From here, I assisted in vehicle modeling and full stack development. Initially, I modeled in-game vehicles by using a program called <a className='hyperlink' href='https://www.zmodeler3.com/'>zModeler 3</a>.
-                                        I continued doing this for about 5 months before moving onto reviewing existing code written in <a className='hyperlink' href='https://lua.org/'>Lua</a>. I reviewed by cleaning, fixing bugs and reducing redundancy/optimizing. Due to the age of this written code,
-                                        I lead a project in 2020 to rewrite the entire framework and successfully did so which brought many new consumers to try our server due to the new features and smoothness when it comes to FPS (Frames Per Second) and resource usage.
-                                    </Typography>
+                                            <Typography sx={{ mt: 3 }} variant="body1" component="div">
+                                                From here, I assisted in vehicle modeling and full stack development. Initially, I modeled in-game vehicles by using a program called <a className='hyperlink' href='https://www.zmodeler3.com/'>zModeler 3</a>.
+                                                I continued doing this for about 5 months before moving onto reviewing existing code written in <a className='hyperlink' href='https://lua.org/'>Lua</a>. I reviewed by cleaning, fixing bugs and reducing redundancy/optimizing. Due to the age of this written code,
+                                                I lead a project in 2020 to rewrite the entire framework and successfully did so which brought many new consumers to try our server due to the new features and smoothness when it comes to FPS (Frames Per Second) and resource usage.
+                                            </Typography>
+                                        </div>
+                                    </Fade>
                                 </div>
-                            </Fade>
+                            </Slide>
                         </VisibilitySensor>
 
                         <Divider sx={{ mt: 3, mb: 3 }} color='white' />

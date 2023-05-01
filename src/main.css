@@ -40,6 +40,7 @@ body {
     position: relative;
     font-family: 'Comfortaa';
 
+    overflow: hidden;
     background: #2b303083;
     border: 1px solid var(--main-border-color);
 }
