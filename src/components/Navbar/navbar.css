@@ -11,30 +11,3 @@
     background: var(--main-background-color);
     border-bottom: 2.55px solid var(--main-border-color);
 }
-
-.navbar_button:hover {
-    letter-spacing: 1.35px;
-    color: #24f8f8;
-}
-
-.navbar_button {
-    font-size: 12.55px;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    margin-left: 10px;
-    margin-right: 15px;
-    letter-spacing: .85px;
-
-    cursor: pointer;
-    color: white;
-    transition: .2s ease-in-out;
-}
-
-.navbar_icon:hover {
-    transform: scale(1.25);
-}
-
-.navbar_icon {
-    font-size: 23px;
-}

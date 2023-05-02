@@ -25,6 +25,17 @@ const experiencesSubHeaderStyle: object = {
     bgcolor: '#272c2c'
 };
 
+const myNameStyle: object = {
+    mt: 1,
+    mb: 2,
+    fontSize: '30px',
+    transition: '.2s ease-in-out',
+    '&:hover': {
+        fontSize: '35px',
+        textShadow: '0 0 1.5vh rgb(0, 190, 190)'
+    }
+};
+
 // ABOUT COMPONENT
 const About: React.FC = () => {
     const [showLanguageExperiences, setLanguageExperiencesVisibility]: any = useState(false);
@@ -38,7 +49,7 @@ const About: React.FC = () => {
             <Fade in={true} timeout={1500}>
                 <Box display="flex" justifyContent="center">
                     <div id='main_inner_centeredarea'>
-                        <Typography sx={{ mt: 1, mb: 2 }} variant="h4" component="div">
+                        <Typography sx={myNameStyle} variant="h4" component="div">
                             Alexander (Alex) Arizola
                         </Typography>
 

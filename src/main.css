@@ -17,6 +17,20 @@ body {
     --main-border-color: #28acac;
 }
 
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1.15);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
+
 ::-webkit-scrollbar {
     width: .5vmin;
 }
@@ -51,6 +65,11 @@ body {
     overflow: hidden;
 }
 
+.hyperlink:hover {
+    color: rgb(4, 255, 247);
+}
+
 .hyperlink {
-    color: rgb(0, 190, 190);
+    color: rgb(0, 178, 178);
+    transition: .2s ease-in-out;
 }
