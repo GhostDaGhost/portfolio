@@ -7,6 +7,13 @@ import CircularProgress from '@mui/material/CircularProgress/CircularProgress';
 import Typography from '@mui/material/Typography/Typography';
 import Slide from '@mui/material/Slide/Slide';
 import Fade from '@mui/material/Fade/Fade';
+import Button from '@mui/material/Button/Button';
+
+const skipLoadButtonStyle: object = {
+    border: '1.2px solid #28acac',
+    borderRadius: '1vh',
+    color: 'white'
+};
 
 const typewriterStyle: object = {
     fontSize: '26.8px',
@@ -17,6 +24,9 @@ const typewriterStyle: object = {
 
 // LOADER COMPONENT
 const Loader: React.FC = () => {
+    let typewriterEndingTimeout: any;
+
+    // SLIDE STATE AND TYPEWRITER
     const [shouldSlideUp, setSlideUpFlag]: any = useState(false);
     const [text]: any = useTypewriter({
         words: ['Hello there :)', 'Welcome to my portfolio!'],
@@ -25,11 +35,21 @@ const Loader: React.FC = () => {
         deleteSpeed: 50,
         delaySpeed: 1150,
         onLoopDone: () => {
-            setTimeout(() => {
+            typewriterEndingTimeout = setTimeout(() => {
                 setSlideUpFlag(true);
             }, 2000);
         }
     });
+
+    // LOADING SCREEN SKIP FUNCTION
+    const SkipLoadingScreen: any = () => {
+        clearTimeout(typewriterEndingTimeout);
+        setSlideUpFlag(true);
+
+        // RELAY TO MAIN FILE TO STOP LOADING SCREEN
+        const skipEvent: CustomEvent = new CustomEvent('skippedLoadingScreen', {});
+        document.dispatchEvent(skipEvent);
+    }
 
     // RETURN ELEMENT
     return (
@@ -54,6 +74,10 @@ const Loader: React.FC = () => {
 
                         <Box sx={{ mt: 9.55 }} display="flex" justifyContent="center">
                             <CircularProgress size={53} sx={{ color: 'teal' }}/>
+                        </Box>
+
+                        <Box sx={{ mt: 6 }} display="flex" justifyContent="center">
+                            <Button sx={skipLoadButtonStyle} onClick={SkipLoadingScreen}>Skip Loading</Button>
                         </Box>
                     </div>
                 </Slide>

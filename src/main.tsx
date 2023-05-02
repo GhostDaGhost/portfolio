@@ -12,9 +12,16 @@ import Loader from './components/Loader/loader';
 const Main: React.FC = () => {
     const [loadingDOM, setLoaderVisibility]: any = useState(true);
 
+    // LISTEN FOR LOADING SCREEN SKIP
+    let loaderTimeout: any;
+    document.addEventListener('skippedLoadingScreen', () => {
+        clearTimeout(loaderTimeout);
+        setLoaderVisibility(false);
+    });
+
     // UPON INITIALIZATION, DISPLAY LOADER FOR X AMOUNT OF SECONDS
     useEffect(() => {
-        setTimeout(() => setLoaderVisibility(false), 8750);
+        loaderTimeout = setTimeout(() => setLoaderVisibility(false), 8750);
     }, []);
 
     // RETURN ELEMENT
