@@ -21,7 +21,7 @@ const Main: React.FC = () => {
 
     // UPON INITIALIZATION, DISPLAY LOADER FOR X AMOUNT OF SECONDS
     useEffect(() => {
-        loaderTimeout = setTimeout(() => setLoaderVisibility(false), 8750);
+        loaderTimeout = setTimeout(() => setLoaderVisibility(false), 8550);
     }, []);
 
     // RETURN ELEMENT
