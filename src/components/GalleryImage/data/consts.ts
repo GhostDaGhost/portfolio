@@ -57,7 +57,7 @@ export const galleryImages: any = {
         {
             'name': 'Police MDT - Vehicle Profile',
             'link': 'https://i.imgur.com/QSBvzhn.png'
-        }
+        },
         {
             'name': 'Police MDT - Bulletin',
             'link': 'https://i.imgur.com/EbW7I7b.png'
