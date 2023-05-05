@@ -34,6 +34,14 @@ export const galleryImages: any = {
         {
             'name': 'Gallery',
             'link': 'https://i.imgur.com/BKNhfbf.png'
+        },
+        {
+            'name': 'Call History',
+            'link': 'https://i.imgur.com/lK9eS6M.png'
+        },
+        {
+            'name': 'Text Conversation',
+            'link': 'https://i.imgur.com/VYrIZlu.png'
         }
     ],
 
@@ -46,6 +54,10 @@ export const galleryImages: any = {
             'name': 'Police MDT - Person Profile',
             'link': 'https://i.imgur.com/xDhEIpy.png'
         },
+        {
+            'name': 'Police MDT - Vehicle Profile',
+            'link': 'https://i.imgur.com/QSBvzhn.png'
+        }
         {
             'name': 'Police MDT - Bulletin',
             'link': 'https://i.imgur.com/EbW7I7b.png'
