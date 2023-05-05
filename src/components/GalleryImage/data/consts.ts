@@ -18,6 +18,22 @@ export const galleryImages: any = {
         {
             'name': 'Social Media',
             'link': 'https://i.imgur.com/ccHBAZP.png'
+        },
+        {
+            'name': 'Yellow Pages',
+            'link': 'https://i.imgur.com/ygueWXK.png'
+        },
+        {
+            'name': 'Banking',
+            'link': 'https://i.imgur.com/TXqDWZe.png'
+        },
+        {
+            'name': 'Weather',
+            'link': 'https://i.imgur.com/hWbyjYu.png'
+        },
+        {
+            'name': 'Gallery',
+            'link': 'https://i.imgur.com/BKNhfbf.png'
         }
     ],
 
