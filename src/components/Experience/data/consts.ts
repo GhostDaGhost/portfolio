@@ -67,6 +67,13 @@ export const experiencedLanguages: object[] = [
         'time': 'Under a year',
         'linkURL': 'https://mui.com/',
         'avatarLinkURL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-plain.svg'
+    },
+
+    {
+        'name': 'Sass',
+        'time': 'Under a year',
+        'linkURL': 'https://sass-lang.com/',
+        'avatarLinkURL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg'
     }
 ];
 
