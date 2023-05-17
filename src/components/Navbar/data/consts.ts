@@ -9,7 +9,7 @@ export const socialMediaLinks: object[] = [
     },
     {
         'name': 'Twitter',
-        'link': 'https://twitter.com/GhostDaGhost/'
+        'link': 'https://twitter.com/alex_arizola/'
     },
     {
         'name': 'LinkedIn',
