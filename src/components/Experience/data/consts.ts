@@ -74,6 +74,13 @@ export const experiencedLanguages: object[] = [
         'time': 'Under a year',
         'linkURL': 'https://sass-lang.com/',
         'avatarLinkURL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg'
+    },
+
+    {
+        'name': 'Less',
+        'time': 'Under a year',
+        'linkURL': 'https://lesscss.org/',
+        'avatarLinkURL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg'
     }
 ];
 
