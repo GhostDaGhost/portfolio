@@ -50,35 +50,35 @@ export const experiencedLanguages: object[] = [
 
     {
         'name': 'PHP',
-        'time': 'Under a year',
+        'time': '1 year',
         'linkURL': 'https://php.net/',
         'avatarLinkURL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg'
     },
 
     {
         'name': 'React',
-        'time': 'Under a year',
+        'time': '1 year',
         'linkURL': 'https://reactjs.org/',
         'avatarLinkURL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
     },
 
     {
         'name': 'Material UI',
-        'time': 'Under a year',
+        'time': '1 year',
         'linkURL': 'https://mui.com/',
         'avatarLinkURL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-plain.svg'
     },
 
     {
         'name': 'Sass',
-        'time': 'Under a year',
+        'time': '1 year',
         'linkURL': 'https://sass-lang.com/',
         'avatarLinkURL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg'
     },
 
     {
         'name': 'Less',
-        'time': 'Under a year',
+        'time': '1 year',
         'linkURL': 'https://lesscss.org/',
         'avatarLinkURL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg'
     }
@@ -136,7 +136,7 @@ export const experiencedTools: object[] = [
 
     {
         'name': 'Atom',
-        'time': 'Under a year',
+        'time': '1 year',
         'linkURL': 'https://atom.io/',
         'avatarLinkURL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/atom/atom-original.svg'
     }

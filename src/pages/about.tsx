@@ -59,7 +59,6 @@ const About: React.FC = () => {
                             <Typography sx={{ mt: 1, mb: 1 }} variant="body1" component="div">
                                 I'm Alex! A guy just living in a world where technology constantly evolves. I am a full stack developer with experience in various programming languages.
                                 I've been in this line of work for <b>3 years</b> <span style={{ color: 'darkgrey' }}>(2019)</span>.
-                                I currently own and actively develop on <a className='hyperlink' href='https://www.productionrp.net/'>ProductionRP</a>, a serious roleplay server on <a className='hyperlink' href="https://fivem.net">FiveM</a>.
                             </Typography>
 
                             <Typography sx={{ mt: 2, mb: 1 }} variant="body1" component="div">
