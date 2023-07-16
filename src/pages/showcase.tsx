@@ -37,6 +37,8 @@ const Showcase: React.FC = () => {
     const [openFocusedImageContainer, setFocusedImageContainerVisibility]: any = useState(false);
     const [focusedImage, setFocusedImage]: any = useState('');
 
+    const linkTreeImageLink: string = `${process.env.PUBLIC_URL}/assets/linktree.png`;
+
     // RETURN ELEMENT
     return (
         <div id='main_container'>
@@ -66,6 +68,31 @@ const Showcase: React.FC = () => {
 
                             <Typography sx={{ mt: 1, mb: 1 }} variant="body1" component="div">
                                 This website was written in <a className='hyperlink' href='https://reactjs.org/'>TypeScript React</a> and <a className='hyperlink' href='https://mui.com/'>Material UI</a> by myself and hosted through <a className='hyperlink' href='https://netlify.com/'>Netlify</a>!
+                            </Typography>
+                        </div>
+
+                        <div className='about_page_wrapper'>
+                            <Typography sx={{ mt: 1, mb: 2 }} variant="h5" component="div">Link Tree</Typography>
+                            <Divider sx={{ opacity: .33, mb: 1 }} color='white' />
+
+                            <Box display="flex" justifyContent="center">
+                                <ImageList sx={showcaseImageListStyle} cols={1}>
+                                    <GalleryImage
+                                        hint='Link Tree'
+                                        path={linkTreeImageLink}
+                                        // overrideWidth='80%'
+                                        onImageClick={() => {
+                                            setFocusedImage(linkTreeImageLink);
+                                            setFocusedImageContainerVisibility(true);
+                                        }}
+                                    ></GalleryImage>
+                                </ImageList>
+                            </Box>
+
+                            <Typography sx={{ mt: 1, mb: 1 }} variant="body1" component="div">
+                                A page where all of my social media can be accessed in order to get in contact with me.
+                                This website was written in <a className='hyperlink' href='https://vuejs.org/' rel="noopener noreferrer" target="_blank">Vue.js</a>, <a className='hyperlink' href='https://sass-lang.com/' rel="noopener noreferrer" target="_blank">Sass</a> and <a className='hyperlink' href='https://typescriptlang.org/' rel="noopener noreferrer" target="_blank">TypeScript</a> by myself and hosted through <a className='hyperlink' href='https://netlify.com/'>Netlify</a>!
+                                You can access it <a className='hyperlink' href='https://alexarizola.info/' rel="noopener noreferrer" target="_blank">here</a>!
                             </Typography>
                         </div>
 

@@ -139,6 +139,13 @@ export const experiencedTools: object[] = [
         'time': '1 year',
         'linkURL': 'https://atom.io/',
         'avatarLinkURL': 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/atom/atom-original.svg'
+    },
+
+    {
+        'name': 'Netlify',
+        'time': '1 year',
+        'linkURL': 'https://netlify.com/',
+        'avatarLinkURL': 'https://i.imgur.com/rYzMkk8.png'
     }
 ];
 

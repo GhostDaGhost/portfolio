@@ -20,7 +20,7 @@ const Experience: React.FC<ExperienceInterface> = ({name, time, linkURL, avatarL
 
                 <ListItemText primary={
                     <Typography variant="body1" component="div">
-                        {!linkURL ? name : <a className='hyperlink' href={linkURL}>{name}</a>}
+                        {!linkURL ? name : <a className='hyperlink' href={linkURL} rel="noopener noreferrer" target="_blank">{name}</a>}
                     </Typography>
                 } secondary={
                     <Typography variant="body2" component="div">
