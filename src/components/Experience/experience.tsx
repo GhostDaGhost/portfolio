@@ -6,6 +6,12 @@ import React from 'react';
 import '../../main.css';
 import { experienceDescriptions } from './data/consts';
 
+const experiencesWithLocalImages: any = {
+    'zModeler 3': true,
+    'Netlify': true,
+    'Vite': true
+};
+
 // EXPERIENCE ENTRY COMPONENT
 const Experience: React.FC<ExperienceInterface> = ({name, time, linkURL, avatarLinkURL}: any = {}) => {
     return (
@@ -13,8 +19,11 @@ const Experience: React.FC<ExperienceInterface> = ({name, time, linkURL, avatarL
             <Divider />
             <ListItem>
                 <ListItemAvatar>
-                    <Avatar sx={{ borderRadius: '0%' }} src={avatarLinkURL}>
-                        {!avatarLinkURL ? <KeyboardDoubleArrowRightIcon></KeyboardDoubleArrowRightIcon> : ''}
+                    <Avatar
+                        sx={{ borderRadius: '0%' }}
+                        src={experiencesWithLocalImages[name] ? (`${process.env.PUBLIC_URL}/assets/images/${avatarLinkURL}`) : avatarLinkURL}
+                    >
+                        {!avatarLinkURL ? <KeyboardDoubleArrowRightIcon/> : ''}
                     </Avatar>
                 </ListItemAvatar>
 

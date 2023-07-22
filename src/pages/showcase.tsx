@@ -37,7 +37,7 @@ const Showcase: React.FC = () => {
     const [openFocusedImageContainer, setFocusedImageContainerVisibility]: any = useState(false);
     const [focusedImage, setFocusedImage]: any = useState('');
 
-    const linkTreeImageLink: string = `${process.env.PUBLIC_URL}/assets/linktree.png`;
+    const linkTreeImageLink: string = `${process.env.PUBLIC_URL}/assets/images/linktree.png`;
 
     // RETURN ELEMENT
     return (

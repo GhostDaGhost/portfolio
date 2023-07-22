@@ -20,7 +20,7 @@ const dogImageAccordionStyle: object = {
 
 // ERROR PAGE COMPONENT
 const Error: React.FC = () => {
-    const dogImageLink: string = `${process.env.PUBLIC_URL}/assets/dog.png`;
+    const dogImageLink: string = `${process.env.PUBLIC_URL}/assets/images/dog.png`;
 
     // RETURN ELEMENT
     return (

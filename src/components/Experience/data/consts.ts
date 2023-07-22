@@ -128,10 +128,17 @@ export const experiencedTools: object[] = [
     },
 
     {
+        'name': 'Vite',
+        'time': '< 1 year',
+        'linkURL': 'https://vitejs.dev/',
+        'avatarLinkURL': 'vite.png'
+    },
+
+    {
         'name': 'zModeler 3',
         'time': '1 year',
         'linkURL': 'https://zmodeler3.com/',
-        'avatarLinkURL': 'https://i.imgur.com/lqySBYp.png'
+        'avatarLinkURL': 'zmodeler3.png'
     },
 
     {
@@ -145,7 +152,7 @@ export const experiencedTools: object[] = [
         'name': 'Netlify',
         'time': '1 year',
         'linkURL': 'https://netlify.com/',
-        'avatarLinkURL': 'https://i.imgur.com/rYzMkk8.png'
+        'avatarLinkURL': 'netlify.png'
     }
 ];
 
